@@ -1,0 +1,33 @@
+name: resolve
+buildsystem: simple
+build-options:
+  build-args:
+    - --share=network
+sources:
+  - type: file
+    url: https://upload.wikimedia.org/wikipedia/commons/9/90/DaVinci_Resolve_17_logo.svg
+    sha256: 3f445ee2e93e03e419841e792ce18229e7d1f6371cefc6f1376b15d36650017c
+    dest-filename: com.blackmagicdesign.Resolve.svg
+  - type: file
+    path: other/com.blackmagicdesign.Resolve.desktop
+  - type: file
+    path: other/com.blackmagicdesign.Resolve.metainfo.xml
+  - type: file
+    path: downloader/headers.txt
+  - type: file
+    path: downloader/post_data.json
+  - type: file
+    path: other/launcher.sh
+  - type: file
+    path: downloader/download.sh
+build-commands:
+  - bash download.sh
+  - unzip resolve.zip
+  - ./DaVinci_Resolve_*_Linux.run --appimage-extract
+  - rm -rf squashfs-root/AppRun* squashfs-root/CentOSUpdate squashfs-root/DV_Resolve.png squashfs-root/installer* squashfs-root/filelist.txt squashfs-root/docs squashfs-root/Technical*
+  - mv ./squashfs-root/* /app/
+  - install -Dm755 launcher.sh /app/bin/launcher.sh
+  - install -Dm644 ${FLATPAK_ID}.svg /app/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg
+  - install -Dm644 ${FLATPAK_ID}.desktop /app/share/applications/${FLATPAK_ID}.desktop
+  - install -Dm644 ${FLATPAK_ID}.metainfo.xml /app/share/metainfo/${FLATPAK_ID}.metainfo.xml
+

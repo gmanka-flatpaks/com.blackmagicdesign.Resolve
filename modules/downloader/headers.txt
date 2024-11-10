@@ -1,0 +1,9 @@
+Host: www.blackmagicdesign.com
+Accept: application/json, text/plain, */*
+Origin: https://www.blackmagicdesign.com
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:132.0) Gecko/20100101 Firefox/132.0
+Content-Type: application/json;charset=UTF-8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Authority: www.blackmagicdesign.com
+Cookie: _ga=GA1.2.1849503966.1518103294; _gid=GA1.2.953840595.1518103294
