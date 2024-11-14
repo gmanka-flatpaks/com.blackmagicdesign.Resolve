@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
-  <id>com.blackmagicdesign.Resolve</id>
+  <id>com.blackmagicdesign.resolve</id>
   <metadata_license>FSFAP</metadata_license>
   <project_license>LicenseRef-proprietary</project_license>
   <name>DaVinci Resolve</name>
@@ -10,7 +10,7 @@
     <p>DaVinci Resolve is a professional tool for video editing, color correction, visual effects, and audio post-production all in one software suite. It is widely used in the film and television industry for its powerful tools and flexibility.</p>
   </description>
 
-  <launchable type="desktop-id">com.blackmagicdesign.Resolve.desktop</launchable>
+  <launchable type="desktop-id">com.blackmagicdesign.resolve.desktop</launchable>
 
   <screenshots>
     <screenshot type="default">

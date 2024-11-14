@@ -6,7 +6,7 @@ Comment=Revolutionary new tools for editing, visual effects, color correction an
 Exec=launcher.sh %U
 Terminal=false
 MimeType=application/x-resolveproj;
-Icon=com.blackmagicdesign.Resolve
+Icon=com.blackmagicdesign.resolve
 Categories=AudioVideo;Video;Graphics;
 Name[en_US]=DaVinci Resolve
 

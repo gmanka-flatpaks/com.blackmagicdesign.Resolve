@@ -7,11 +7,11 @@ sources:
   - type: file
     url: https://upload.wikimedia.org/wikipedia/commons/9/90/DaVinci_Resolve_17_logo.svg
     sha256: 3f445ee2e93e03e419841e792ce18229e7d1f6371cefc6f1376b15d36650017c
-    dest-filename: com.blackmagicdesign.Resolve.svg
+    dest-filename: com.blackmagicdesign.resolve.svg
   - type: file
-    path: other/com.blackmagicdesign.Resolve.desktop
+    path: other/com.blackmagicdesign.resolve.desktop
   - type: file
-    path: other/com.blackmagicdesign.Resolve.metainfo.xml
+    path: other/com.blackmagicdesign.resolve.metainfo.xml
   - type: file
     path: downloader/headers.txt
   - type: file
